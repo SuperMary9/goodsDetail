@@ -1,0 +1,99 @@
+/*===================商品详情样式表=================*/
+/*图标公用样式*/
+.icon{
+	display:inline-block;
+	position:absolute; 
+	width: .64rem;
+	height: .64rem;
+	margin-top:.346rem;
+	background: url(../images/back@2x.png) no-repeat;   /*默认后退图标*/
+	background-size: .64rem;
+}
+.icon.icon-back{
+	background: url(../images/back@2x.png) no-repeat;
+	background-size: .64rem;
+	left:.4544rem;
+}
+.icon.icon-cart{
+	background: url(../images/gouwuche@2x.png) no-repeat;
+	background-size: .64rem;
+	right:3.1968rem;
+}
+.icon.icon-collect{
+	background: url(../images/collect24@2x.png) no-repeat;
+	background-size: .64rem;
+	right:1.7056rem;
+}
+.icon.icon-share{
+	background: url(../images/gouwuche_copy@2x.png) no-repeat;
+	background-size: .64rem;
+	right:.4rem;
+}
+
+/*标题公用样式*/
+.p-header{
+	height:1.1712rem;
+	width:100%;
+	border-bottom:1px solid #dcdcdc;
+	position: relative;
+}
+.p-content{
+	width:100%;
+}
+/*轮播样式*/
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    z-index:10;
+    position: relative;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    width: 100%;
+    height:300px;
+    position: relative;
+    color:#fff;
+}
+.swiper-slide1{background: pink;}
+.swiper-slide2{background: gray;}
+.swiper-slide3{background: green;}
+.swiper-slide4{background: blue;}
+
+
+/*底部样式*/
+.p-footer{
+	position: absolute;
+	width: 100%;
+	height: 1.0656rem;
+	line-height: 1.0656rem;
+	font-size: 0.4256rem;
+	font-family: PingFangSC-Regular;
+	letter-spacing: 0;
+}
+.p-footer a.footer-bar{
+	width:50%;
+	background: rgba(239,92,110,0.80);
+	color: #fff;
+	box-sizing: border-box;
+	text-align:center;
+}
+a.footer-bar.fl{
+	border-right:1px solid #fff;
+}
+a.footer-bar.fr{
+	border-left:1px solid #fff;
+}
+

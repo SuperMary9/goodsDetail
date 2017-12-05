@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en" class="has-topbar has-bottombar">
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/iphonex.css">
+    <link rel="stylesheet" href="css/Allcss.css">
+    <link rel="stylesheet" href="css/Pdetail.css"> <!-- 商品详情样式表 -->
+</head>
+<body style="overflow:Scroll;overflow-y:hidden">
+
+<!-- 标题栏 start-->
+<header class="p-header">
+    <a href="javascript:void(0)" class="icon icon-back"></a>
+    <a href="javascript:void(0)" class="icon icon-cart"></a>
+    <a href="javascript:void(0)" class="icon icon-collect"></a>
+    <a href="javascript:void(0)" class="icon icon-share"></a>
+</header>
+<!-- 标题栏 end-->
+    
+<!-- 中间主体部分 start-->
+<div class="p-content">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide1">Slide 1</div>
+            <div class="swiper-slide swiper-slide2">Slide 2</div>
+            <div class="swiper-slide swiper-slide3">Slide 3</div>
+            <div class="swiper-slide swiper-slide4">Slide 4</div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+</div>
+
+
+<!-- 中间主体部分 end -->
+
+<!-- 底部 start-->
+<footer class="p-footer">
+    <a class="fl footer-bar" href="javascript:void(0)">用户评价(999+)</a>
+    <a class="fr footer-bar" href="javascript:void(0)">买家秀视频(20+)</a>
+</footer>
+<!-- 底部 end-->
+
+</body>
+<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        
+        // 如果需要前进后退按钮
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        
+        // 如果需要滚动条
+        // scrollbar: '.swiper-scrollbar',
+    })        
+</script>
+
+</html>

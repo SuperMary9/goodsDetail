@@ -1,0 +1,589 @@
+body {
+    height: 100%;
+}
+.header {
+    height: 114px;
+    width: 100%;
+    /*background-color: #aaa;*/
+    position: relative;
+}
+.header .title {
+    height: 64px;
+    width: 100%;
+}
+.header .time {
+    height: 50px;
+    width: 100%;
+    background-color: #666666;
+}
+.header .title a{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    float: left;
+    background:url("../images/back.png") no-repeat center  ;
+    background-size:18px 22px;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+.header .title h2{
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;
+    top: 30px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+    color: #333;
+}
+.header .time {
+    position: relative;
+}
+.header .time ul {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+header .time ul li {
+    float: left;
+    height: 100%;
+    width: 33.3%;
+}
+header .time ul li a {
+    display: inline-block;
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+    height: 40px;
+    line-height: 16px;
+    color: #fff;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+
+}
+header .time ul li a span{
+    font-size: 12px;
+}
+header .time ul .activ{
+    background-color: #EF5C6E;
+}
+
+
+/*header部分结束*/
+
+/*Countdown部分开始*/
+.Countdown {
+
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #4A4A4A;
+    height: 50px;
+    line-height: 50px;
+
+}
+.Countdown p {
+
+
+}
+/*Countdown部分结束*/
+
+/*商品详情页开始*/
+section {
+    width: 100%;
+
+}
+section .Detail ul li{
+    height: 150px;
+    /*background-color: #aaa;*/
+    border-top: 0.5px solid #E5E5E5;
+    position: relative;
+}
+section .Detail a .zz {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    background: rgba(51,51,51,0.50);
+}
+section .Detail a .zz p{
+    position: absolute;
+    display: inline-block;
+    font-size: 16px;
+    color: #FFFFFF;
+    top: 50%;
+    margin-top: -11px;
+    left: 50%;
+    margin-left: -24px;
+    
+}
+section .Detail .Detail-l {
+    position: absolute;
+    height: 80%;
+    width: 34.7%;
+    background-color:#EF5C6E;
+    left: 10px;
+    top: 10%;
+}
+
+section .Detail .Detail-r {
+    position:absolute;
+    height: 80%;
+    width: 57.1%;
+    background-color: #fff;
+    right: 10px;
+    top: 10%;
+}
+section .Detail .Detail-r .title1 {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+section .Detail .Detail-r .title2{
+    font-size: 12px;
+    color: #999999;
+}
+
+.progress{
+    position:absolute;
+    width: 100%;
+    height: 6px;
+    background-color:#CCCCCC;
+    margin-top: 10px;
+
+}
+.progress-bar{
+    height: 6px;
+}
+section .Detail .Detail-r .already{
+    position:absolute;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 20px;
+}
+section .Detail .Detail-r .remin {
+    position:absolute;
+    width: 100%;
+    height: 24px;
+    bottom: 0px;
+    right: 0px;
+}
+section .Detail .Detail-r .remin span span{
+    height: 24px;
+    line-height: 24px;
+
+}
+section .Detail .Detail-r .remin .remin-r {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    width: 70px;
+}
+.remin .now-p {
+    color: #EF5C6E;
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+}
+.remin .before-p {
+    font-size: 12px;
+    text-decoration:line-through;
+}
+.remin .remin-r {
+    display: inline-block;
+    height: 24px;
+    width: 70px;
+    background-color: #B50016;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.remin .remin-r {
+    position: absolute;
+    right: 1px;
+}
+
+
+.remin .remin-c {
+    display: inline-block;
+    height: 24px;
+    width: 70px;
+    background-color: #fff;
+    border: 0.5px solid #B50016;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color:  #B50016;
+    position: absolute;
+    right: 1px;
+}
+/*秒杀页面结束*/
+
+/*代言广场开始*/
+
+body {
+
+    /*background-size:cover;*/
+    /*background: url('../images/represent-bg.png') no-repeat center top;*/
+}
+/*背景*/
+.bgi{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.bgi img   {
+    height: 100%;
+    width: 100%;
+}
+/*顶部开始*/
+header {
+    position: relative;
+    z-index: 1000;
+}
+header .top-l {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+header .top-l a img {
+    height: 30px;
+    width: 30px;
+    margin-top: 3.8px;
+    margin-left: 8.8px;
+}
+
+header .top-r {
+    position: absolute;
+    height: 40px;
+    top: 10px;
+    width: 50%;
+    left:46.9% ;
+
+    background: rgba(0,0,0,0.50);
+    border-radius: 100px;
+}
+
+.top-r .head-p {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+}
+
+.top-r .head-p a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    left: 0;
+    top: 0;
+}
+.top-r  h2 {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 45px;
+    color: #FFFFFF;
+}
+.top-r  p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 45px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.top-r a{
+    position: absolute;
+    display: inline-block;
+    height: 20px;
+    width: 36px;
+    background-color: #EF5C6E;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    border-radius: 22px;
+    z-index: 600;
+    color: #fff;
+}
+.represent-Detail {
+    position: fixed;
+    height: 110px;
+    bottom: 6%;
+    width: 100%;
+}
+.represent-Detail .represent-Detail-l {
+    position: relative;
+    /*position: absolute;*/
+    background: #EF5C6E;
+    border-radius: 6px 0 0 6px;
+    height: 110px;
+    width: 17px;
+    /*right: 0;*/
+}
+
+.represent-Detail .represent-Detail-l img   {
+    position: absolute;
+    width: 12px;
+    top: 50%;
+    left: 50%;
+    margin-left: -6px;
+    margin-top: -15px;
+
+}
+
+.represent-Detail-m {
+    height: 110px;
+    width: 29.3%;
+    background-color: #aaa;
+    z-index: 1000;
+}
+.represent-Detail-m img {
+    width: 100%;
+    height: 100%;
+}
+.represent-Detail-r {
+    height: 110px;
+    width: 29.3%;
+    background-color: #fff;
+}
+.Detail-msg {
+    padding: 8px 8px 5px 8px;
+}
+.represent-Detail-r h2{
+    font-size: 12px;
+    color: #333333;
+    letter-spacing: -0.45px;
+}
+
+.represent-Detail-r span {
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    color: #999999;
+    letter-spacing: 0;
+}
+.represent-Detail-r p {
+    position: absolute;
+    font-size: 14px;
+    color: #EF5C6E;
+    letter-spacing: -0.53px;
+    bottom: 5px;
+}
+
+/*遮罩层*/
+.zz {
+    position: absolute;
+    top: 0;
+    height:100% ;
+    width: 100%;
+    opacity: 0.4;
+    background: #000000;
+}
+.zz a  {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+
+}
+.zz a img{
+    width: 100%;
+    width: 100%;
+}
+
+/*进度条*/
+footer {
+    position: absolute;
+    height: 17px;
+    bottom: 10px;
+    width: 100%;
+}
+.progress-r-star {
+    position: absolute;
+    left: 2.7%;
+    height: 17px;
+    width: 8.5%;
+    color: #fff;
+}
+.progress-r-r {
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.70);
+    left: 15.2%;
+    top: 7px;
+}
+.progress-r-end {
+    position: absolute;
+    right: 2.7%;
+    height: 17px;
+    width: 8.5%;
+    color: #fff;
+}
+.progress-bar-r {
+    height: 2px;
+}
+.progress-bar-r span {
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    border-radius: 9px;
+    margin-top: -4px;
+
+}
+
+/*代言广场结束*/
+
+
+
+/*本期精选开始*/
+
+
+.weekTitle {
+    width: 100%;
+}
+.title-week{
+    height: 64px;
+    background-color: #F8F8F8 ;
+}
+.weekTitle .title-week a{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    float: left;
+    background:url("../images/back.png") no-repeat center  ;
+    background-size:18px 22px;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+.weekTitle .title-week h2{
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;
+    top: 30px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+    color: #333;
+}
+.weekTitle-b{
+    /*width: 100%;*/
+    padding: 13px 10px 10px 10px;
+    height: 90px;
+    border-bottom: 6px solid #F0F0F0;
+
+}
+.weekTitle .weekTitle-1 {
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium;
+    color: #333333;
+    letter-spacing: -0.6px;
+}
+
+.weekTitle .weekTitle-2 {
+    height: 17px;
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #999999;
+    letter-spacing: -0.45px;
+
+}
+.weekTitle .weekTitle-3 {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0;
+    height: 40px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.weekMain {
+    padding-top: 10px;
+
+
+}
+.weekMain .weekList ul li {
+    float: left;
+    height: 236px;
+    width: 45.9%;
+    background-color: #aaa;
+    margin-left: 2.7%;
+    margin-top: 10px;
+}
+
+
+/*.progress-r {*/
+    /*position:absolute;*/
+    /*bottom: 10px;*/
+    /*width: 100%;*/
+    /*padding: 0 10px 0 10px;*/
+/*}*/
+/*.progress-r-r{*/
+    /*position:absolute;*/
+    /*display: inline-block;*/
+    /*width: 70%;*/
+    /*height: 2px;*/
+    /*background-color:#CCCCCC;*/
+    /*margin-top: 10px;*/
+
+/*}*/
+/*.progress-bar-r{*/
+    /*height: 2px;*/
+/*}*/
+
+/*.progress-r .progress-r-star {*/
+    /*position:absolute;*/
+    /*display: inline-block;*/
+    /*width: 8.5%;*/
+    /*left: 10px;*/
+    /*color: #fff;*/
+/*}*/
+/*.progress-r .progress-r-end {*/
+    /*position:absolute;*/
+    /*display: inline-block;*/
+    /*width: 8.5%;*/
+    /*right:10px;*/
+    /*color: #fff;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
