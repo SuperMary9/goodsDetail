@@ -6,27 +6,28 @@
 	width: .64rem;
 	height: .64rem;
 	margin-top:.346rem;
-	background: url(../images/back@2x.png) no-repeat;   /*默认后退图标*/
+	background-image: url(../images/back@2x.png);   /*默认后退图标*/
+	background-repeat:no-repeat;
 	background-size: .64rem;
 }
 .icon.icon-back{
-	background: url(../images/back@2x.png) no-repeat;
-	background-size: .64rem;
+	background-image: url(../images/back@2x.png);
 	left:.4544rem;
 }
 .icon.icon-cart{
-	background: url(../images/gouwuche@2x.png) no-repeat;
-	background-size: .64rem;
+	background-image: url(../images/gouwuche@2x.png);
 	right:3.1968rem;
 }
 .icon.icon-collect{
-	background: url(../images/collect24@2x.png) no-repeat;
-	background-size: .64rem;
+	background-image: url(../images/collect24@2x.png);
+	right:1.7056rem;
+}
+.icon.icon-collect.active{
+	background-image: url(../images/collect24_pre@2x.png);
 	right:1.7056rem;
 }
 .icon.icon-share{
-	background: url(../images/gouwuche_copy@2x.png) no-repeat;
-	background-size: .64rem;
+	background-image: url(../images/gouwuche_copy@2x.png);
 	right:.4rem;
 }
 
@@ -43,7 +44,7 @@
 /*轮播样式*/
 .swiper-container {
     width: 100%;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     z-index:10;
     position: relative;
@@ -51,7 +52,7 @@
 .swiper-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 280px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -63,7 +64,7 @@
     -ms-flex: 0 0 auto;
     flex-shrink: 0;
     width: 100%;
-    height:300px;
+    height:100%;
     position: relative;
     color:#fff;
 }
@@ -71,6 +72,37 @@
 .swiper-slide2{background: gray;}
 .swiper-slide3{background: green;}
 .swiper-slide4{background: blue;}
+.swiper-pagination{
+	bottom: 10px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
+    width:100%;
+    border:1px solid red;
+    height:30px;
+}
+.swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+    margin:0 5px;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #007aff;
+}
 
 
 /*底部样式*/
