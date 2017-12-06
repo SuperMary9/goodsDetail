@@ -1,4 +1,4 @@
-/*===================商品详情样式表=================*/
+/*===================商品详情样式表 on 2017.12.05  by mali=================*/
 /*图标公用样式*/
 .icon{
     display:inline-block;
@@ -43,17 +43,17 @@
 }
 /*轮播样式*/
 .swiper-container {
-    height: 504px;
+    /*height: 504px;*/
+    height:13.44rem;
     overflow: hidden;
     z-index:10;
     position: relative;
-    margin:0 0.5408rem;
+    /*margin:0 0.5408rem;*/
 }
 .swiper-wrapper {
     position: relative;
-    width: 85.34%;
     width: 100%;
-    /*height: 280px;*/
+    height: 10.9344rem;
     /*margin:0 0.7136rem;*/
     display: -webkit-box;
     display: -moz-box;
@@ -65,23 +65,27 @@
     -webkit-flex-shrink: 0;
     -ms-flex: 0 0 auto;
     flex-shrink: 0;
-    width: 8.32rem;
-    /*margin-right:0.3456rem;*/
-    margin:0 0.1728rem;
-    height: 10.9344rem;
+    width: 100%;
+    /*height: 10.9344rem;*/
     position: relative;
     color: #fff;
+    
+}
+.slider-list{
+    /*margin:0 0.7456rem;*/
+    margin:0.4544rem;
     background: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(153,153,153,0.50);
     -webkit-border-radius:6px;
     border-radius:6px;
-
+    height: 10.9344rem;
+    position:relative;
 }
 {
     width:2.1344rem;
     height:2.1344rem;
 }
-.swiper-slide1{background: pink;}
+.swiper-slide1{}
 .swiper-slide2{background: gray;}
 .swiper-slide3{background: green;}
 .swiper-slide4{background: blue;}
@@ -146,6 +150,61 @@
     background-image: url(../images/video_chanpin@2x.png);
 }
 
+.p-name{
+    line-height:0.5856rem;
+    font-size:0.4256rem;
+    font-family: PingFangSC-Regular;
+    color: #333;
+}
+.p-sub{
+    line-height:0.5344rem;
+    font-size:0.3744rem;
+    font-family: PingFangSC-Regular;
+    color: #999;
+}
+.p-price{
+    width:100%;
+    /*height:0.5844rem;*/
+    height:32px;
+    background-image: url(../images/rectangle_3@2x.png);
+    position:absolute;
+    left:0;
+    bottom:0;
+    border-radius: 0 0 6px 6px;
+    color:#fff;
+    font-size:0.32rem;
+    font-family: PingFangSC-Semibold;
+}
+.p-price .fl{
+    padding-left:0.2688rem;
+}
+.p-price .fr{
+    padding-right:0.2688rem;
+}
+.p-price i{
+    text-decoration:line-through;
+}
+.p-price b{
+    font-size: 0.5344rem;
+    line-height: 0.7456rem;
+    font-weight:normal;
+}
+
+/*购物车按钮*/
+.cart-btn{
+    background-image: linear-gradient(-180deg, #F5515F 0%, #D60726 100%);
+    border-radius: 6px;
+    font-family: PingFangSC-Regular;
+    font-size: 0.4256rem;
+    width:2.7744rem;
+    height:0.96rem;
+    color: #fff;
+    display:block;
+    margin:0 auto;
+}
+.cart-btn:hover{
+    color: #fff;
+}
 
 /*底部样式*/
 .p-footer{

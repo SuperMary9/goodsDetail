@@ -31,18 +31,40 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <!-- 产品 -->
-            <div class="swiper-slide swiper-slide1">
-                <img src="images/product@2x.png" alt="" style="width:8.5344rem;height:8.5344rem;" />
+            <div class="swiper-slide">
+                <div class="slider-list  swiper-slide1">
+                    <img src="images/product@2x.png" alt="" style="width:100%;border:1px solid red;display:block;" />
+                    <p class="p-name ac">兰芝净透亚光气垫BB</p>
+                    <p class="p-sub ac">美白遮瑕保湿裸妆</p>
+                    <div class="p-price">
+                        <span class="fl">秒杀价：</span>
+                        <b class="">￥160</b>
+                        <i class="">￥280</i>
+                        <span class="fr">距离结束还剩&nbsp;00:39:27</span>
+                    </div>
+                </div>
             </div>
 
             <!-- 感受 -->
-            <div class="swiper-slide swiper-slide2">Slide 2</div>
+            <div class="swiper-slide">
+                <div class="slider-list  swiper-slide2">
+                    Slide 2
+                </div>
+            </div>
 
             <!-- 详情 -->
-            <div class="swiper-slide swiper-slide3">Slide 3</div>
+            <div class="swiper-slide">
+                <div class="slider-list  swiper-slide3">
+                    Slide 3
+                </div>
+            </div>
 
             <!-- 搭配 -->
-            <div class="swiper-slide swiper-slide4">Slide 4</div>
+            <div class="swiper-slide">
+                <div class="slider-list  swiper-slide4">
+                    Slide 4
+                </div>
+            </div>
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
@@ -54,6 +76,10 @@
         <!-- 如果需要滚动条 -->
         <div class="swiper-scrollbar"></div>
     </div>
+
+    <!-- 加入购物车 -->
+    <a class="cart-btn ac" href="javascript:void(0)">加入购物车</a>
+
 </div>
 
 
@@ -69,29 +95,6 @@
 </body>
 <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
 <script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
-<script>
-    var titArr = ['产品','感受','详情','搭配'];
-    var mySwiper = new Swiper ('.swiper-container', {
-        direction: 'horizontal',
-        loop: false,
 
-        // 分页器
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        paginationType : 'bullets',
-        paginationBulletRender: function (swiper, index, className) {
-            console.log()
-            return '<span class="' + className + '">' + '<i class="sliber-tit sliber-tit'+(index+1)+'">'+ titArr[index] +'</i></span>';
-        },
-
-        // 网格分布
-        centeredSlides : true,
-    
-        // 前进后退按钮
-        // nextButton: '.swiper-button-next',
-        // prevButton: '.swiper-button-prev',
-        
-    })        
-</script>
-
+<script type="text/javascript" src="js/main-mali.js"></script>
 </html>
