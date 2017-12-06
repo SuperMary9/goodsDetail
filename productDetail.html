@@ -30,9 +30,18 @@
 <div class="p-content">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide1">Slide 1</div>
+            <!-- 产品 -->
+            <div class="swiper-slide swiper-slide1">
+                <img src="images/product@2x.png" alt="" style="width:8.5344rem;height:8.5344rem;" />
+            </div>
+
+            <!-- 感受 -->
             <div class="swiper-slide swiper-slide2">Slide 2</div>
+
+            <!-- 详情 -->
             <div class="swiper-slide swiper-slide3">Slide 3</div>
+
+            <!-- 搭配 -->
             <div class="swiper-slide swiper-slide4">Slide 4</div>
         </div>
         <!-- 如果需要分页器 -->
@@ -64,16 +73,19 @@
     var titArr = ['产品','感受','详情','搭配'];
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'horizontal',
-        loop: true,
-        
+        loop: false,
+
         // 分页器
         pagination: '.swiper-pagination',
         paginationClickable: true,
         paginationType : 'bullets',
         paginationBulletRender: function (swiper, index, className) {
             console.log()
-            return '<span class="' + className + '">' + titArr[index] + '</span>';
-        }
+            return '<span class="' + className + '">' + '<i class="sliber-tit sliber-tit'+(index+1)+'">'+ titArr[index] +'</i></span>';
+        },
+
+        // 网格分布
+        centeredSlides : true,
     
         // 前进后退按钮
         // nextButton: '.swiper-button-next',

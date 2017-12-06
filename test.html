@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      *{margin: 0px;padding:0px;}
+    	.progress-bar{
+    		height: 30px;
+    	}
+    
+	    .progress-bar .bar-inner{
+	    	position: relative;
+		    top: 13px;
+		    height: 4px;
+		    background: rgba(0, 0, 0, 0.3);
+	    }
+      
+      .progress {
+      	position: absolute;
+        height: 100%;
+        background-color: #ffcd32;
+      }
+        
+      .progress-btn-wrapper{
+      	position: absolute;
+        left: -8px;
+        top: -13px;
+        width: 30px;
+        height: 30px;
+      }
+        
+      .progress-btn {
+        position: relative;
+        top: 7px;
+        left: 7px;
+        box-sizing: border-box;
+        width: 16px;
+        height: 16px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        background-color: #ffcd32;
+      }
+         
+    </style>
+</head>
+<body>
+<audio src=""></audio>
+<div class="progress-bar" ref="progressBar" >
+    <div class="bar-inner">
+      <div class="progress" ref="progress"></div>
+      <div class="progress-btn-wrapper" ref="progressBtn">
+        <div class="progress-btn"></div>
+      </div>
+    </div>
+</div>
+<script src='./js/jquery.min.js'></script>
+<script>
+$(function () {
+  var touch = [], progressBtnWidth = 16;
+
+  $(".bar-inner").on('click', function(e) {
+    var rect = $(".progress-bar")[0].getBoundingClientRect();
+    var offsetWidth = e.pageX - rect.left;
+    _offset(offsetWidth);
+  })
+
+  $(".progress-btn-wrapper").on('touchstart', function(e){
+    console.log(1);
+    touch.initiated = true;
+    touch.startX = e.originalEvent.targetTouches[0].pageX;
+    touch.left = $(".progress")[0].clientWidth;
+  }).on("touchmove", function(e){
+    console.log(2);
+    if (!touch.initiated) {
+      return
+    }
+    var deltaX = e.originalEvent.targetTouches[0].pageX - touch.startX;
+    var offsetWidth = Math.min($(".progress-bar")[0].clientWidth - progressBtnWidth, Math.max(0, touch.left + deltaX));
+    _offset(offsetWidth);
+  }).on("touchend", function(e){
+    console.log(3);
+    touch.initiated = false;
+  })
+
+
+  function _offset(offsetWidth) {
+    $(".progress").css('width', offsetWidth + 'px');
+    $(".progress-btn-wrapper").css('transform', 'translate3d('+offsetWidth+'px,0,0)');
+  }
+})
+</script>
+</body>
+</html>
