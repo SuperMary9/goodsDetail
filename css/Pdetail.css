@@ -73,7 +73,7 @@
 }
 .slider-list{
     /*margin:0 0.7456rem;*/
-    margin:0.4544rem;
+    margin:0 0.4544rem;
     background: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(153,153,153,0.50);
     -webkit-border-radius:6px;
@@ -166,6 +166,7 @@
     width:100%;
     /*height:0.5844rem;*/
     height:32px;
+    line-height: 32px;
     background-image: url(../images/rectangle_3@2x.png);
     position:absolute;
     left:0;
