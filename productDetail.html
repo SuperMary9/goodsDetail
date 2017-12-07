@@ -33,7 +33,7 @@
             <!-- 产品 -->
             <div class="swiper-slide">
                 <div class="slider-list  swiper-slide1">
-                    <img src="images/product@2x.png" alt="" style="width:100%;display:block;" />
+                    <img class="p-img" src="images/product@2x.png" alt="" />
                     <p class="p-name ac">兰芝净透亚光气垫BB</p>
                     <p class="p-sub ac">美白遮瑕保湿裸妆</p>
                     <div class="p-price">
@@ -95,18 +95,55 @@
 <!-- 底部 end-->
 
 <!-- 产品规格弹层 start -->
-<!-- <div class="p-layer layer-transparent"></div>
-<div class="p-layer">
-    <div class="p-layer-content">
-        <a href="javascript:void(0)" class="icon icon-close"></a>
-        <a href="javascript:void(0)" class="ac cart-confirm active">确认</a>
+<div class="js-cart-layer">
+    <div class="p-layer layer-transparent"></div>
+    <div class="p-layer">
+        <div class="ac p-layer-content">
+            <img class="p-img-sm" src="images/product@2x.png" alt="" />
+            <p class="p-name">兰芝净透亚光气垫BB</p>
+            <p class="p-price-sm">￥250</p>
+            <div class="p-spec">
+                <div id="product-wrap">
+                    <script id="product-wrap-html" type="text/html">
+                        {{each data as value i}}
+                        <dl class="">
+                            <dt>{{value.name}}:</dt>
+                            <dd>    
+                                {{each value.value as val j}}
+                                    {{if j==0}}
+                                        <a href="javascript:void(0)" class="p-tips active">{{val}}</a>
+                                    {{else if j!=0}}
+                                        <a href="javascript:void(0)" class="p-tips">{{val}}</a>
+                                    {{/if}}
+                                {{/each}}
+                            </dd>
+                        </dl>
+                        {{/each}}
+                    </script>
+                </div>
+            </div>
+            
+            <!-- 关闭按钮 -->
+            <a href="javascript:void(0)" class="icon icon-close"></a>
+            <div class="cart-box">
+                <div class="calc-wrap">
+                    <a class="fl calc-btn btn-sub" href="javascript:void(0)">-</a>
+                    <input class="calc-input" value="1" type="text" type="number" />
+                    <a class="fr calc-btn btn-add" href="javascript:void(0)">+</a>
+                </div>
+                <a href="javascript:void(0)" class="ac cart-confirm active">确认</a>
+            </div>
+            
+        </div>
     </div>
-</div> -->
+</div>
+
+
 <!-- 产品规格结束 end -->
 
 </body>
 <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
 <script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
-
+<script type="text/javascript" src="js/artTemplate.js"></script>
 <script type="text/javascript" src="js/main-mali.js"></script>
 </html>
