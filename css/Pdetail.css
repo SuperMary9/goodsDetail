@@ -1,39 +1,39 @@
-/*===================商品详情样式表 on 2017.12.05  by mali=================*/
+/*===================商品详情样式表=================*/
 /*图标公用样式*/
 .icon{
     display:inline-block;
     position:absolute; 
-    width: .64rem;
-    height: .64rem;
-    margin-top:.346rem;
+    width: 2rem;
+    height: 2rem;
+    margin-top:1.08rem;
     background-image: url(../images/back@2x.png);   /*默认后退图标*/
     background-repeat:no-repeat;
-    background-size: .64rem;
+    background-size: 2rem;
 }
 .icon.icon-back{
     background-image: url(../images/back@2x.png);
-    left:.4544rem;
+    left:0.83rem;
 }
 .icon.icon-cart{
     background-image: url(../images/gouwuche@2x.png);
-    right:3.1968rem;
+    right:10rem;
 }
 .icon.icon-collect{
     background-image: url(../images/collect24@2x.png);
-    right:1.7056rem;
+    right:5.33rem;
 }
 .icon.icon-collect.active{
     background-image: url(../images/collect24_pre@2x.png);
-    right:1.7056rem;
+    right:5.33rem;
 }
 .icon.icon-share{
     background-image: url(../images/gouwuche_copy@2x.png);
-    right:.4rem;
+    right:1.25rem;
 }
 
 /*标题公用样式*/
 .p-header{
-    height:1.1712rem;
+    height:3.66rem;
     width:100%;
     /*border-bottom:1px solid #dcdcdc;*/
     position: relative;
@@ -44,7 +44,7 @@
 /*轮播样式*/
 .swiper-container {
     /*height: 504px;*/
-    height:13.44rem;
+    height:44.8rem;
     overflow: hidden;
     z-index:10;
     position: relative;
@@ -53,7 +53,7 @@
 .swiper-wrapper {
     position: relative;
     width: 100%;
-    height: 10.9344rem;
+    height: 34.17rem;
     /*margin:0 0.7136rem;*/
     display: -webkit-box;
     display: -moz-box;
@@ -66,26 +66,23 @@
     -ms-flex: 0 0 auto;
     flex-shrink: 0;
     width: 100%;
-    /*height: 10.9344rem;*/
+    /*height: 34.17rem;*/
     position: relative;
     color: #fff;
     
 }
 .slider-list{
     /*margin:0 0.7456rem;*/
-    margin:0 0.4544rem;
+    margin:0 1.42rem;
     background: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(153,153,153,0.50);
     -webkit-border-radius:6px;
     border-radius:6px;
-    height: 10.9344rem;
+    height: 34.17rem;
     position:relative;
+    overflow:hidden;
 }
-{
-    width:2.1344rem;
-    height:2.1344rem;
-}
-.swiper-slide1{}
+.swiper-slide1{background: pink;}
 .swiper-slide2{background: gray;}
 .swiper-slide3{background: green;}
 .swiper-slide4{background: blue;}
@@ -104,12 +101,12 @@
     transform: translate3d(0,0,0);
     z-index: 10;
     width:100%;
-    /*border:1px solid green;*/
+    border:1px solid green;
     height:80px;
 }
 .swiper-pagination-bullet{
-    width: 1.0656rem;
-    height: 0.10656rem;
+    width: 3.33rem;
+    height: 0.33rem;
     display: inline-block;
     border-radius: 2px;
     background: #CCC;
@@ -117,77 +114,75 @@
     font-family: PingFangSC-Regular;
     letter-spacing: 0;
     color:#999;
-    margin: 0 0.2658rem;
+    margin: 0 0.8306rem;
 }
 .swiper-pagination-bullet-active {
     background: #EF5C6E;
     color:#EF5C6E;
 }
 .sliber-tit{
-    line-height:0.5344rem;
-    width: 1.14rem;
+    line-height:1.67rem;
+    width: 3.56rem;
     float: left;
     position: relative;
-    margin-top:0.2144rem;
+    margin-top:0.67rem;
 }
 .sliber-tit1,.sliber-tit2{
     text-indent:10pt;
 }
 .sliber-tit1:before,.sliber-tit2:before{
     position: absolute;
-    top:-0.167rem;
+    top:-0.521rem;
     left:0;
     content:' ';
-    width:.32rem;
-    height:.32rem;
+    width:1rem;
+    height:1rem;
     margin-top:10px;
     float:left;
     background-repeat:no-repeat;
-    background-size: .32rem;
+    background-size: 1rem;
     background-image: url(../images/video_chanpin_pre@2x.png);
 }
 .swiper-pagination-bullet-active .sliber-tit1:before,.swiper-pagination-bullet-active .sliber-tit2:before{
     background-image: url(../images/video_chanpin@2x.png);
 }
-
 .p-name{
-    line-height:0.5856rem;
-    font-size:0.4256rem;
+    line-height:1.83rem;
+    font-size:1.33rem;
     font-family: PingFangSC-Regular;
     color: #333;
 }
 .p-sub{
-    line-height:0.5344rem;
-    font-size:0.3744rem;
+    line-height:1.67rem;
+    font-size:1.17rem;
     font-family: PingFangSC-Regular;
     color: #999;
 }
 .p-price{
     width:100%;
-    /*height:0.5844rem;*/
-    height:32px;
-    line-height: 32px;
+    height:2.67rem;
+    line-height: 2.67rem;
     background-image: url(../images/rectangle_3@2x.png);
     position:absolute;
     left:0;
     bottom:0;
     border-radius: 0 0 6px 6px;
     color:#fff;
-    font-size:0.32rem;
+    font-size:1rem;
     font-family: PingFangSC-Semibold;
 }
 .p-price .fl{
-    padding-left:0.2688rem;
+    padding-left:0.84rem;
 }
 .p-price .fr{
-    padding-right:0.2688rem;
+    padding-right:0.84rem;
 }
 .p-price i{
     text-decoration:line-through;
 }
 .p-price b{
-    font-size: 0.5344rem;
-    line-height: 0.7456rem;
+    font-size: 1.67rem;
+    line-height: 2.33rem;
     font-weight:normal;
 }
 
@@ -196,10 +191,10 @@
     background-image: linear-gradient(-180deg, #F5515F 0%, #D60726 100%);
     border-radius: 6px;
     font-family: PingFangSC-Regular;
-    font-size: 0.4256rem;
-    width:2.7744rem;
-    height:0.96rem;
-    line-height:0.96rem;
+    font-size: 1.33rem;
+    width:8.67rem;
+    height:3rem;
+    line-height:3rem;
     color: #fff;
     display:block;
     margin:0 auto;
@@ -212,9 +207,9 @@
 .p-footer{
     position: absolute;
     width: 100%;
-    height: 1.0656rem;
-    line-height: 1.0656rem;
-    font-size: 0.4256rem;
+    height: 3.33rem;
+    line-height: 3.33rem;
+    font-size: 1.33rem;
     font-family: PingFangSC-Regular;
     letter-spacing: 0;
 }
@@ -232,5 +227,55 @@ a.footer-bar.fr{
     border-left:1px solid #fff;
 }
 
-
-
+/*购物车弹层*/
+.p-layer{
+    position:fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 10;
+    overflow:hidden;
+}
+.layer-transparent{
+    opacity: 0.8;
+    background: #aaa;
+}
+.p-layer-content{
+    background: #FFF;
+    border-radius: 4px;
+    width:25rem;
+    height:39.83rem;
+    /*width:80%;
+    height:71.7%;*/
+    margin:0 auto;
+    position:relative;
+    top:50%;
+    margin-top: -19.915rem;
+    font-family: PingFangSC-Regular;
+}
+.cart-confirm{
+    background: rgba(153,153,153,0.80);
+    color:#fff;
+    width:100%;
+    display:block;
+    height:3.5rem;
+    line-height:3.5rem;
+    font-size:1.33rem;
+    bottom:0;
+    left:0;
+    position:absolute;
+    border-radius: 0 0 4px 4px
+}
+.cart-confirm.active{
+    background: rgba(239,92,110,0.80);
+}
+.icon-close{
+    background-image: url(../images/gouwuche_copy@2x.png);
+}
+.p-layer-content .icon-close{
+    position: absolute;
+    right:0;
+    top:0;
+    margin-top:0;
+}
