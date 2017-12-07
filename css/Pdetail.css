@@ -73,7 +73,9 @@
 }
 .slider-list{
     /*margin:0 0.7456rem;*/
-    margin:0 1.42rem;
+    /*margin:0 1.42rem;*/
+    margin:0 2.33rem;
+
     background: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(153,153,153,0.50);
     -webkit-border-radius:6px;
@@ -87,7 +89,6 @@
 .swiper-slide3{background: green;}
 .swiper-slide4{background: blue;}
 .swiper-pagination{
-    bottom: 10px;
     left: 0;
     position: absolute;
     text-align: center;
@@ -99,9 +100,7 @@
     -ms-transform: translate3d(0,0,0);
     -o-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    z-index: 10;
     width:100%;
-    border:1px solid green;
     height:80px;
 }
 .swiper-pagination-bullet{
