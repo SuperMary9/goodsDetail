@@ -100,4 +100,13 @@ $(function(){
         }
     },1000);
 
+
+    // 感受部分 大屏产品信息
+    $(".feel-flod-wrap").on("click", ".feel-flod-btn", function(){
+        $(this).closest(".feel-flod-wrap").toggleClass("active");
+    });
+
+    $(".js-feel-layer").on("click", ".icon-back-white", function(){
+        $(this).closest(".js-feel-layer").hide();
+    });
 });
