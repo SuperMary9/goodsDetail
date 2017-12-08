@@ -108,5 +108,11 @@ $(function(){
 
     $(".js-feel-layer").on("click", ".icon-back-white", function(){
         $(this).closest(".js-feel-layer").hide();
+        $(".js-feel-layer").hide();
     });
+    $(".swiper-slide2").on("click", ".play-btn", function(){
+        $(".js-feel-layer").show();
+    });
+
+    
 });
