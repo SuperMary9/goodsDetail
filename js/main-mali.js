@@ -28,12 +28,21 @@ $(function(){
     $(".p-spec").on("click", "a", function(e){
         $(this).closest("dl").find(".p-tips").removeClass("active");
         $(this).addClass("active");
-    })
+    });
 
-    // 产品属性
+    // 数量操作
+    $(".calc-wrap").on("click", "a", function(e){
+        var _this = $(this).index();
+        var _calc = _this === 0? (-1):1;
+        var _val = $(".calc-input").val();
+        var _value = (_this ===0 && _val == 1) ? 1 : _val-0 +_calc; // -0操作，转换数据类型
+        $(".calc-input").val(_value);
+    });
+
+    // 产品属性模板
     var data = {
         data:[
-            {'name':'规格',value:['50g','100g','150g','200g','250g','300g']},
+            {'name':'规格',value:['50g','100g','150g','200g','250g']},
             {'name':'颜色',value:['红色','白色','蓝色']},
             {'name':'尺寸',value:['18寸','20寸','21寸','22寸','23寸','24寸']}
         ]
