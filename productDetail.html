@@ -38,12 +38,19 @@
                         <img class="p-img" src={{imgSrc}} alt="" />
                         <p class="p-name ac">{{title}}</p>
                         <p class="p-sub ac">{{subTitle}}</p>
+                        {{if countTime != 0}}
                         <div class="p-price">
                             <span class="fl">秒杀价：</span>
                             <b class="">￥{{price}}</b>
                             <i class="">￥{{pPrice}}</i>
                             <span class="fr">距离结束还剩&nbsp;{{ countTime }}</span>
                         </div>
+                        {{else if countTime == 0 }}
+                        <div class="p-end">
+                            <i style="font-size:1.33rem;color: #EF5C6E;">￥{{pPrice}}</i>
+                            <span style="font-size:1.17rem;color:#999">已售:{{number}}</span>
+                        </div>
+                        {{/if}}
                     </script>
                 </div>
             </div>

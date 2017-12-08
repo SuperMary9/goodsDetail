@@ -58,8 +58,12 @@ $(function(){
         price:160,
         pPrice:280,
         time:'1512752567310',
-        countTime:''
+        countTime:'',
+        number:1999
     };
+    proDetails.countTime = changeTimeStamp(proDetails.time); // 初次计算倒计时
+    var proDetailsHtml = template('pro-details', proDetails);
+    $("#swiper-slide1").html(proDetailsHtml);
     
      // 倒计时函数
     function changeTimeStamp(timeStamp){
@@ -70,13 +74,6 @@ $(function(){
             var sec = Math.floor(distancetime/1000%60); // 秒
             var min = Math.floor(distancetime/1000/60%60);  // 分
             var hour =Math.floor(distancetime/1000/60/60%24);   // 时
-            console.log(hour)
-            if(ms<10){
-                ms = "00"+ ms;
-            }
-            if(ms<100){
-                ms = "0"+ ms;
-            }
             if(sec<10){
                 sec = "0"+ sec;
             }
@@ -86,10 +83,7 @@ $(function(){
             if(hour<10){
                 hour = "0"+ min;
             }
-            ms = ms.toString().substr(0,2);
-            // return min + ":" +sec + ":" +ms;  // 精确到毫秒
             return hour + ":" + min + ":" +sec; // 精确到秒
-
         }
         else{//若否，就是已经到截止时间了
             return 0;

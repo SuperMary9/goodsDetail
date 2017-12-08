@@ -163,6 +163,13 @@
     color: #999;
     margin:0.33rem 0;
 }
+.p-end{
+    width:100%;
+    height:1.83rem;
+    line-height:1.83rem;
+    font-family: PingFangSC-Regular;
+    text-align:center;
+}
 .p-price{
     width:100%;
     height:2.67rem;
