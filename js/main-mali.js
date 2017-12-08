@@ -20,7 +20,7 @@ $(function(){
         $(".js-cart-layer").show();
     });
     // 关闭弹层操作
-    $(".p-layer-content").on( "click", ".icon-close", function(){
+    $(".p-layer-content").on( "click", ".icon-close,.cart-confirm", function(){
         $(this).closest(".js-cart-layer").hide();
     });
 
