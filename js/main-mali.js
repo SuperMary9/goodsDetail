@@ -40,15 +40,70 @@ $(function(){
     });
 
     // 产品属性模板
-    var data = {
+    var proProperty = {
         data:[
             {'name':'规格',value:['50g','100g','150g','200g','250g']},
             {'name':'颜色',value:['红色','白色','蓝色']},
             {'name':'尺寸',value:['18寸','20寸','21寸','22寸','23寸','24寸']}
         ]
     }
-    var html = template('product-wrap-html', data);
-    $("#product-wrap").html(html);
+    var proPropertyHtml = template('product-wrap-html', proProperty);
+    $("#product-wrap").html(proPropertyHtml);
 
+    // 产品信息
+    var proDetails = {
+        title:'兰芝净透亚光气垫BB',
+        subTitle:'美白遮瑕保湿裸妆',
+        imgSrc:'images/product@2x.png',
+        price:160,
+        pPrice:280,
+        time:'1512752567310',
+        countTime:''
+    };
+    
+     // 倒计时函数
+    function changeTimeStamp(timeStamp){
+        var distancetime = timeStamp - new Date().getTime();
+        // console.log(distancetime);
+        if(distancetime > 0){ //如果大于0.说明尚未到达截止时间              
+            var ms = Math.floor(distancetime%1000);  // 毫秒
+            var sec = Math.floor(distancetime/1000%60); // 秒
+            var min = Math.floor(distancetime/1000/60%60);  // 分
+            var hour =Math.floor(distancetime/1000/60/60%24);   // 时
+            console.log(hour)
+            if(ms<10){
+                ms = "00"+ ms;
+            }
+            if(ms<100){
+                ms = "0"+ ms;
+            }
+            if(sec<10){
+                sec = "0"+ sec;
+            }
+            if(min<10){
+                min = "0"+ min;
+            }
+            if(hour<10){
+                hour = "0"+ min;
+            }
+            ms = ms.toString().substr(0,2);
+            // return min + ":" +sec + ":" +ms;  // 精确到毫秒
+            return hour + ":" + min + ":" +sec; // 精确到秒
+
+        }
+        else{//若否，就是已经到截止时间了
+            return 0;
+        }    
+    };
+    var countTime = setInterval(function(){ //倒计时
+        proDetails.countTime = changeTimeStamp(proDetails.time);
+        if(proDetails.countTime==0){     // 倒计时截止，调当前期中奖纪录
+            console.log('结束');
+            clearInterval(countTime);
+        }else{
+            var proDetailsHtml = template('pro-details', proDetails);
+            $("#swiper-slide1").html(proDetailsHtml);
+        }
+    },1000);
 
 });

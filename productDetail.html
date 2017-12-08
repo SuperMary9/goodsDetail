@@ -30,9 +30,27 @@
 <div class="p-content">
     <div class="swiper-container">
         <div class="swiper-wrapper">
+        
+            <!-- 产品 -->
+            <div class="swiper-slide">
+                <div class="slider-list" id="swiper-slide1">
+                    <script id="pro-details" type="text/html">
+                        <img class="p-img" src={{imgSrc}} alt="" />
+                        <p class="p-name ac">{{title}}</p>
+                        <p class="p-sub ac">{{subTitle}}</p>
+                        <div class="p-price">
+                            <span class="fl">秒杀价：</span>
+                            <b class="">￥{{price}}</b>
+                            <i class="">￥{{pPrice}}</i>
+                            <span class="fr">距离结束还剩&nbsp;{{ countTime }}</span>
+                        </div>
+                    </script>
+                </div>
+            </div>
+
             <!-- 感受 -->
             <div class="swiper-slide">
-                <div class="slider-list swiper-slide2">
+                <div class="slider-list swiper-slide2" id="swiper-slide2">
                     <img class="p-img" src="images/ganshou.png" alt="" />
                     <a class="play-btn" href="Javascript:void(0)"><img class="p-img" src="images/播放_(1)@2x.png" alt="" /></a>
                     <p class="p-name ac">兰芝净透亚光气垫BB</p>
@@ -43,40 +61,19 @@
                             <span class="p-person-id">当红主播</span>
                         </a>
                     </div>
-                    <!-- <div class="p-price">
-                        <span class="fl">秒杀价：</span>
-                        <b class="">￥160</b>
-                        <i class="">￥280</i>
-                        <span class="fr">距离结束还剩&nbsp;00:39:27</span>
-                    </div> -->
-                </div>
-            </div>
-
-            <!-- 产品 -->
-            <div class="swiper-slide">
-                <div class="slider-list  swiper-slide1">
-                    <img class="p-img" src="images/product@2x.png" alt="" />
-                    <p class="p-name ac">兰芝净透亚光气垫BB</p>
-                    <p class="p-sub ac">美白遮瑕保湿裸妆</p>
-                    <div class="p-price">
-                        <span class="fl">秒杀价：</span>
-                        <b class="">￥160</b>
-                        <i class="">￥280</i>
-                        <span class="fr">距离结束还剩&nbsp;00:39:27</span>
-                    </div>
                 </div>
             </div>
 
             <!-- 详情 -->
             <div class="swiper-slide">
-                <div class="slider-list swiper-slide3">
+                <div class="slider-list swiper-slide3" id="swiper-slide3">
                     Slide 3
                 </div>
             </div>
 
             <!-- 搭配 -->
             <div class="swiper-slide">
-                <div class="slider-list swiper-slide4">
+                <div class="slider-list swiper-slide4" id="swiper-slide4">
                     Slide 4
                 </div>
             </div>
@@ -94,12 +91,7 @@
 
     <!-- 加入购物车 -->
     <a class="cart-btn ac" href="javascript:void(0)">加入购物车</a>
-
 </div>
-
-
-
-
 <!-- 中间主体部分 end -->
 
 <!-- 底部 start-->
